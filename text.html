@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo List</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tagmenu">
+       <div class="divinput_search">
+        <input class="input_search" type="text" placeholder="SEARCH...">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    </div>
+    
+    <button id="show-demos-button" style="cursor:crosshair;" ></button>
+    <button id="hide-demos-button" class="hidden">Show Demos</button>
+    <div id="demo-list" class="hidden">
+        <ul>
+            <li>HOME DEMO</li>
+            <li>DEMO 2</li>
+            <li>DEMO 3</li>
+            <li>DEMO 4</li>
+            <li>DEMO 5</li>
+            <li>DEMO 6</li>
+            <li>DEMO 7</li>
+            <li>DEMO 8</li>
+            <li>LIVING DEMO</li>
+            <li>FOOD DEMO</li>
+            <li>WEDDING DEMO</li>
+        </ul>
+    </div>
+    <script>
+        const showDemosButton = document.getElementById('show-demos-button');
+        const hideDemosButton = document.getElementById('hide-demos-button');
+        const demoList = document.getElementById('demo-list');
+
+        showDemosButton.addEventListener('click', () => {
+            demoList.classList.remove('hidden');
+            showDemosButton.classList.add('hidden');
+            hideDemosButton.classList.remove('hidden');
+        });
+
+        hideDemosButton.addEventListener('click', () => {
+            demoList.classList.add('hidden');
+            showDemosButton.classList.remove('hidden');
+            hideDemosButton.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
