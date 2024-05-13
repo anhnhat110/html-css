@@ -1,0 +1,89 @@
+
+body {
+    margin: 0; /* Xóa margin mặc định của body */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tagmenu {
+    position: fixed;
+    width: 420px;
+    height: 100%;
+    background-color: white;
+    z-index: 10000;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.divinput_search {
+    position: relative;
+    margin-top: -600px;
+    margin-bottom: 50px;
+}
+
+.input_search {
+    width: 323px;
+    height: 33px;
+    border: 1px solid #CEA352;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    padding-left: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 100px;
+}
+.bell-icon {
+    position: relative;
+    margin-bottom: 20px;
+}
+.search-icon{
+    margin-left: -40px;
+    position: relative;
+    z-index: 1;
+    top: 5px;
+    cursor: pointer;
+}
+.search-icon:hover{
+    color: #CEA352;
+}
+.notifications {
+    display: flex;
+    cursor: pointer;
+    font-size: 13px;
+    color: #353535;
+
+}
+
+.notifications:hover {
+    stroke: #CEA352;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    transition: stroke 0.3s;
+    border-radius: 50%;
+}
+.dropdown-icon:hover{
+    stroke: #CEA352;
+    border : 1px solid #CEA352;
+}
+.notification-list {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 9999;
+    font-size: 11px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid #B2B2B2;
+    margin-top: 5px;
+    right: 0;
+}
+
+.show-menu .notification-list {
+    display: block;
+}
+
