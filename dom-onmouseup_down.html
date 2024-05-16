@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onmousedown Attribute</h2>
+<!-- các sự kiện đều là một phần của a nhấp chuột. 
+    Đầu tiên khi nhấp vào nút chuột, sự kiện onmousedown là được kích hoạt, sau đó, 
+    khi nút chuột được phát hành, sự kiện onmouseup được kích hoạt, 
+    cuối cùng, khi nhấp chuột hoàn tất, sự kiện onclick được kích hoạt -->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+</script>
+
+</body>
+</html> 

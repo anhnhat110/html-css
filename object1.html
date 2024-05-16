@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<p id="car">Xe nay co cac thuoc tinh la: </p>
+<p id="demo"></p>
+<script>
+    let car = {
+        name: "BMW",
+        model: "X5",
+        year: 2019,
+        daydu: function() {
+            return this.name + this.model + this.year;
+        }
+    };
+ 
+    document.getElementById("demo").innerHTML = car.daydu();
+    console.log(car)
+</script>
+</body>
+</html>

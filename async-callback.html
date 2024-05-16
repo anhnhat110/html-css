@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<h2>Callback Functions</h2>
+
+<p>The result of the calculation is:</p>
+<p id="demo"></p>
+
+<script>
+function hienthi(some) {
+document.getElementById("demo").innerHTML = some
+}
+
+function tinhtoan (a,b,myCallback) {
+	sum = a + b;	
+	myCallback(sum);
+}
+tinhtoan (4,5,hienthi)
+
+</script>
+
+</body>
+</html>
