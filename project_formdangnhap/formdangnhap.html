@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="formdangnhap.css" >
+</head>
+<body>
+    <form class="info">
+        <h2>
+            Nhập thông tin cá nhân 
+        </h2>
+        <input oninput={handlechange()} id="tk" type="text" name="username" placeholder="Username" required minlength="10" maxlength="50" onchange="checkUsername()">
+        <p id="alert1"></p>
+        <input id ="em" type="email" name="email" placeholder="Email Adrress" onchange="checkEmail()">
+        <p id="alert2"></p>
+        <select list="range" name="range" id="range">
+            <option value="+84">Vietnam +84</option>
+            <option value="84">Brazil +23</option>
+            <option value="84">USA +55</option>
+            <option value="84">Thailand +211</option>
+            <option value="84">Malaysia +125</option>
+            <option value="84">England +39</option>
+        </select>
+        <p></p>
+        <input id="mk"type="password" name="password" placeholder="Password" onchange="checkPassword()">
+        <p id="alert3"></p>
+        <input id="mk2" type="password" name="password" placeholder="Confirm Password"  onchange="checkPasswordmore()">
+        <p id="alert4"></p>
+        <p>Mật khẩu phải có độ dài từ 8-20 ký tự, bao gồm ít nhất 1 số, 1 chữ cái và 1 ký tự đặc biệt.</p>
+        <p></p>
+        <button id="login" onchange="check()">Login</button>
+    </form>
+    <script src="formdangnhap.js"></script>
+</body>
+</html>

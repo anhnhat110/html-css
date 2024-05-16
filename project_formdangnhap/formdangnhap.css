@@ -1,0 +1,43 @@
+body {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: black
+    
+}
+h2 {
+    margin-bottom: 35px;
+}
+input {
+    height: 30px;
+    border-radius: 7px;
+    border-style:double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: border-color 30s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+select { 
+    height: 35px;
+    border-radius: 7px;
+    border-style:double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: none;
+    border-radius: 7px;
+    height: 30px;
+    color: white;
+    background-color:rgb(68, 186, 237);
+    cursor: pointer;
+}
